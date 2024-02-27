@@ -96,12 +96,12 @@ class Vehiculo:
         """
     
 # uso de clase Vehículo
-coche = Vehiculo("Toyota", "Corolla", True)
+autodeFernando = Vehiculo("Toyota", "Hillux", True)
 coche2 = Vehiculo("Bmw", "mw-303", False)
 
-print(coche.arrancar_auto())
+print(autodeFernando.arrancar_auto())
 
-print(coche.estado_auto())
+print(autodeFernando.estado_auto())
 
 print(coche2.detener_auto())
 
