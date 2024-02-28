@@ -71,6 +71,8 @@ while True:
         persona.get_altura()
     elif opcionMenu == 6:
         persona.set_altura()
-    else:
+    elif opcionMenu == 7:
         print("Gracias por participar del gestor de Usuario!")
         break
+    else:
+        print("Ingrese un valor correspondiente al menú")
