@@ -92,4 +92,4 @@ else:
     print(f"Tu saldo es: {saldo_cuenta2}")
     operaciones()
 
-#sum: Crear una función para las operaciones de la cuenta
+#sum: Establecer métodos de la clase principal y arreglar menú de operaciones
