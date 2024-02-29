@@ -21,7 +21,7 @@ class Persona:
     def get_nombre(self):
         print(f"El nombre del usuario es: {self.nombre}")
     
-    def set_nombre(self):
+    def set_nombre(self): # Definición de SET,
         nombre_usuario = str(input("Ingrese el nombre del usuario: "))
         self.nombre = nombre_usuario
         print(f"El nuevo nombre del usuario es: {nombre_usuario}")
@@ -39,7 +39,7 @@ class Persona:
 
     def set_altura(self):
         altura_usuario = float(input("Ingrese una nueva altura para el usuario: "))
-        self.edad = altura_usuario
+        self.altura = altura_usuario
         print(f"El usuario tiene {altura_usuario}")
 
 # Instancia de la clase 'Persona'

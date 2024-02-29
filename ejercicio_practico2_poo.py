@@ -16,7 +16,7 @@ cuenta2 = CuentaBancaria("987654321", "María López", 500)
     - Retirar 200 euros en la cuenta 2.
     - Mostrar el saldo en ambas cuentas
 """
-
+# Clase cuenta bancaria
 class Cuenta_bancaria:
 
     def __init__ (self, numero_cuenta, titular, saldo):
@@ -24,14 +24,17 @@ class Cuenta_bancaria:
         self.titular = titular
         self.saldo = saldo
 
-    def depositar(self):
-        pass
+    def depositar(self, cantidad):
+        self.saldo += cantidad
 
-    def retirar(self):
-        pass
+    def retirar(self, cantidad ):
+        if cantidad <= self.saldo:
+            self.saldo -= cantidad
+        else:
+            print ("No tiene saldo ")
 
     def mostrar_saldo (self):
-        pass
+        print(f"El saldo de {self.titular} es: {self.saldo}")
 
 def operaciones():
     print("\n1. Operaciones: ")
@@ -51,7 +54,7 @@ def operaciones():
                 op = int(input("Ingrese una opción: "))
 
                 if op == 1:
-                    pass
+                    cuenta1.depositar(500)
                 elif op == 2:
                     pass
                 elif op == 3:
