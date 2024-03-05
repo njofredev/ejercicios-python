@@ -41,13 +41,19 @@ cuenta1 = Cuenta_bancaria("123456789", "Juan Pérez", 1000)
 cuenta2 = Cuenta_bancaria("987654321", "María López", 500)
 
 # Operaciones
-
+# Datos de inicio
 print(f"Los datos de inicio de la cuenta 1 son: Cuenta: {cuenta1.numero_cuenta}, nombre titular: {cuenta1.titular}, saldo de cuenta: {cuenta1.saldo}")
 print(f"Los datos de inicio de la cuenta 2 son: Cuenta: {cuenta2.numero_cuenta}, nombre titular: {cuenta2.titular}, saldo de cuenta: {cuenta2.saldo} \n")
+
+# Deposito
 print("Se depositan $500 euros en la cuenta1")
 cuenta1.depositar(500)
+
+# Retiro
 print("Se retiran $200 euros de la cuenta 2\n")
 cuenta2.retirar(200)
+
+# Se muestran los saldos
 print("Se muestran los saldos actuales de la cuenta 1 y 2\n")
 cuenta1.mostrar_saldo()
 cuenta2.mostrar_saldo()
