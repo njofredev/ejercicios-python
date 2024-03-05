@@ -7,7 +7,7 @@ njofre
     - Métodos: get_nombre(), set_nombre(nombre), get_edad(), 
                set_edad(edad), get_altura(), set_altura(altura)
 
-- Crear una instancia con los siguientes datos: 
+- Crear una instancia con los siguientes datos:
     persona = Persona ("Juan Pérez", 30, 1.75)
 """
 class Persona:
@@ -48,14 +48,14 @@ persona = Persona("Juan pérez", 30, 1.75)
 # Llamado de métodos con menú
 
 while True:
-    print("Bienvenido a gestor de nombres \n")
+    print("***Bienvenido a gestor de usuario*** \n")
     print("1. Mostrar nombre de usuario")
     print("2. Modificar nombre de usuario")
     print("3. Mostrar edad de usuario")
     print("4. Modificar edad de usuario")
     print("5. Mostrar altura de usuario")
     print("6. Modificar altura de usuario")
-    print("7. Salir del programa")
+    print("7. Salir del programa \n")
 
     opcionMenu = int(input("Ingrese una opción del menú: \n"))
 
