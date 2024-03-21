@@ -57,3 +57,5 @@ CREATE TABLE TrabajaEn (
     FOREIGN KEY (RutEmpleado) REFERENCES Empleado(Rut),
     FOREIGN KEY (NumProyecto) REFERENCES Proyecto(Numero)
 );
+
+-- Revisar conexiones entre llaves primarias y foraneas
