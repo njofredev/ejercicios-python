@@ -59,3 +59,4 @@ CREATE TABLE TrabajaEn (
 );
 
 -- Revisar conexiones entre llaves primarias y foraneas
+-- Base de datos lista y utilizada, primera actividad completada 
