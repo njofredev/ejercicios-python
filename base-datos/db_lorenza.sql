@@ -85,3 +85,23 @@ CREATE TABLE Detalle_inventario(
     FOREIGN KEY (id_venta) REFERENCES Ventas(id_venta),
     FOREIGN KEY (id_compra) REFERENCES Compras(id_compra)
 );
+
+-- Insert's
+
+-- Clientes
+INSERT INTO Clientes (id_cliente, nombre, apellido, rut, direccion, telefono, correo ) VALUES
+(1, 'Nicolás', 'Jofré', '19258670-8', 'Independencia', 2837981723, 'n.jofreandrade@gmail.com');
+
+INSERT INTO Clientes (id_cliente, nombre, apellido, rut, direccion, telefono, correo ) VALUES
+(2, 'Elliot', 'Sepúlveda', '12873312-8', 'Conchali', 12379712, 'elliot@gmail.com');
+
+-- Productos
+INSERT INTO Productos (id_producto, nombre, descripcion, precio_costo, precio_venta, categoria, peso, imagen ) VALUES
+(1, 'Patagonia', 'Home-spray', 1000, 5000, 'Aromas', 100.2, NULL); 
+
+INSERT INTO Productos (id_producto, nombre, descripcion, precio_costo, precio_venta, categoria, peso, imagen ) VALUES
+(2, 'Monaco', 'Home-spray', 850, 5300, 'Aromas', 99.2, NULL); 
+
+INSERT INTO Inventario (id_inventario, id_producto, stock_inicial, stock_final) VALUES
+(1001, 1, 20, 25),
+(1002, 2, 40, 30);
