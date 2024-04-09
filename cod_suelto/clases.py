@@ -11,6 +11,7 @@ por ejemplo: auto, persona, estudiante,
 
 # definición de clase en python, pass para mantenerla activa
 
+
 class Persona:
     # definición de atributos de la clase | __init__ constructor inicializador
     def __init__(self, nombre, edad):
@@ -21,13 +22,14 @@ class Persona:
     def saludar(self):
         print(f"Hola mundo, me llamo {self.nombre} y tengo {self.edad} años.")
 
+
 # crea la instancia de la clase
 persona = Persona("Nicolas", 27)
 
 # print(persona.nombre)
 # print(persona.edad)
 # llamado de método
-# persona.saludar() 
+# persona.saludar()
 
 """
 El paradigma de la programación orientada a objeto POO:
@@ -60,30 +62,32 @@ capacidad de modelar problemas de forma natural y estructurada.
 """
 # ejemplos de los 4 principios fundamentales de la POO
 
+
 # Abstracción
 class Vehiculo:
     def __init__(self, marca, modelo, estado):
         self.marca = marca
         self.modelo = modelo
         self.estado = estado
-        
+
     def obtener_info(self):
         return f"Vehiculo: {self.marca} {self.modelo} está {self.estado}"
-    
+
     def arrancar_auto(self):
         self.estado = True
         return f"El vehiculo: {self.marca} modelo: {self.modelo} se ha encendido "
-    
+
     def detener_auto(self):
         self.estado = False
         return f"El vehiculo: {self.marca} modelo: {self.modelo} se ha apagado "
-    
+
     def estado_auto(self):
         if self.estado == True:
             print("El auto está encendido en este momento :)")
         else:
             print("El auto se encuentra apagado en éste momento :(")
-    
+
+
 # Menu para el uso de la clase y sus métodos
 """while True:
     print("**Uso de auto**")
@@ -94,7 +98,7 @@ class Vehiculo:
     
     opcionMenu = int(input("Ingrese un valor del menú: "))
         """
-    
+
 # uso de clase Vehículo
 autodeFernando = Vehiculo("Toyota", "Hillux", True)
 coche2 = Vehiculo("Bmw", "mw-303", False)
