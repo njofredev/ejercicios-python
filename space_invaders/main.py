@@ -4,7 +4,7 @@ import random
 # Inicializar Pygame
 pygame.init()
 
-# Definir colores
+# Definir coloresc
 NEGRO = (0, 0, 0)
 BLANCO = (255, 255, 255)
 VERDE = (0, 255, 0)
@@ -18,6 +18,7 @@ ALTO = 600
 VELOCIDAD_JUGADOR = 5
 VELOCIDAD_OBSTACULOS = 5
 VELOCIDAD_CARRETERA = 5
+
 
 # Clase para el jugador (auto)
 class Jugador(pygame.sprite.Sprite):
@@ -44,6 +45,7 @@ class Jugador(pygame.sprite.Sprite):
         elif self.rect.right > ANCHO:
             self.rect.right = ANCHO
 
+
 # Clase para los obstáculos
 class Obstaculo(pygame.sprite.Sprite):
     def __init__(self, size):
@@ -63,6 +65,7 @@ class Obstaculo(pygame.sprite.Sprite):
             self.rect.x = random.randrange(0, ANCHO - self.rect.width)
             self.rect.y = random.randrange(-100, -40)
 
+
 # Clase para el mapa de carretera
 class Carretera(pygame.sprite.Sprite):
     def __init__(self):
@@ -77,6 +80,7 @@ class Carretera(pygame.sprite.Sprite):
         self.rect.y += VELOCIDAD_CARRETERA
         if self.rect.top >= 0:
             self.rect.y = -ALTO
+
 
 # Inicializar pantalla
 pantalla = pygame.display.set_mode((ANCHO, ALTO))
